@@ -8,11 +8,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
       integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style/main.min.css" />
   </head>
   <body>
@@ -34,23 +38,26 @@
             <li class="nav__item">
               <a href="./pages/portfolio.html" class="nav__link">Портфоліо</a>
             </li>
-            <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="header__list">
           <li class="header__item">
             <a href="mailto:info@devstudio.com" class="header__link"
               ><svg class="header__icon">
-                <use href="./img/symbol-defs.svg#icon-mail"></use>
-                </svg><span class="header__cell">info@devstudio.com</span></a
+                <use href="./img/symbol-defs.svg#icon-mail"></use></svg
+              ><span class="header__cell">info@devstudio.com</span></a
             >
           </li>
           <li class="header__item">
             <a href="tel:+380961111111" class="header__link"
               ><svg class="header__icon">
                 <use href="./img/symbol-defs.svg#icon-tel"></use>
-                </svg>
-                <span class="header__cell">+38 096 111 11 11</span></a>
+              </svg>
+              <span class="header__cell">+38 096 111 11 11</span></a
+            >
           </li>
         </ul>
         <div data-header-modal class="menu is-hidden">
@@ -60,20 +67,42 @@
             </svg>
           </button>
           <ul class="menu__list">
-            <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
-            <li class="menu__item"><a href="./pages/portfolio.html" class="menu__link">Портфоліо</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Студія</a>
+            </li>
+            <li class="menu__item">
+              <a href="./pages/portfolio.html" class="menu__link">Портфоліо</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакти</a>
+            </li>
           </ul>
           <div class="menu__position">
             <ul class="menu__list-contact">
-              <li class="menu__item-contact"><a href="tel:+380961111111" class="menu__link-contact">+38 096 111 11 11</a></li>
-              <li class="menu__item-contact"><a href="mailto:info@devstudio.com" class="menu__link-contact">info@devstudio.com</a></li>
+              <li class="menu__item-contact">
+                <a href="tel:+380961111111" class="menu__link-contact"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="menu__item-contact">
+                <a href="mailto:info@devstudio.com" class="menu__link-contact"
+                  >info@devstudio.com</a
+                >
+              </li>
             </ul>
             <ul class="menu__list-social">
-              <li class="menu__item-social"><a href="" class="menu__link-social">Instagram</a></li>
-              <li class="menu__item-social"><a href="" class="menu__link-social">Twitter</a></li>
-              <li class="menu__item-social"><a href="" class="menu__link-social">Facebook</a></li>
-              <li class="menu__item-social"><a href="" class="menu__link-social">LinkedIn</a></li>
+              <li class="menu__item-social">
+                <a href="" class="menu__link-social">Instagram</a>
+              </li>
+              <li class="menu__item-social">
+                <a href="" class="menu__link-social">Twitter</a>
+              </li>
+              <li class="menu__item-social">
+                <a href="" class="menu__link-social">Facebook</a>
+              </li>
+              <li class="menu__item-social">
+                <a href="" class="menu__link-social">LinkedIn</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -151,7 +180,30 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./img/igor.jpg" alt="igor" class="team__img" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/igor-desktop@2x.webp 2x,
+                    ./img/desktop/igor-desktop@1x.webp 1x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/igor-tablet@2x.webp 2x,
+                    ./img/tablet/igor-tablet@1x.webp 1x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/igor-mobile@2x.webp 2x,
+                    ./img/mobile/igor-mobile@1x.webp 1x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./img/igor.jpg" alt="igor" class="team__img" />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__taxt">Product Designer</p>
@@ -351,7 +403,7 @@
         </div>
       </section>
     </main>
-<footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <a href="./index.html" class="footer__logo"
@@ -447,7 +499,8 @@
                 id="tel"
                 required
                 pattern="^(\+?38)?0\d{9}$"
-                placeholder="+380501234567" />
+                placeholder="+380501234567"
+              />
 
               <svg class="modal__icon">
                 <use href="./img/symbol-defs.svg#icon-phone"></use>
@@ -471,7 +524,8 @@
               placeholder="Введіть текст"
               class="modal__coment"
               id="coment"
-              required></textarea>
+              required
+            ></textarea>
           </label>
           <div class="modal__wrap">
             <label class="modal__checked" for="check">
