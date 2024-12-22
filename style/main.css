@@ -71,8 +71,7 @@ h1, h2, h3, p {
   line-height: 1.38;
   letter-spacing: 0.72px;
   margin-right: auto;
-  -webkit-animation: logo-scale 5000ms alternate infinite;
-          animation: logo-scale 5000ms alternate infinite;
+  animation: logo-scale 5000ms alternate infinite;
 }
 @media screen and (min-width: 768px) {
   .header__logo {
@@ -84,14 +83,6 @@ h1, h2, h3, p {
     font-size: 26px;
     letter-spacing: 0.78px;
     margin-right: 93px;
-  }
-}
-@-webkit-keyframes logo-scale {
-  0% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1.1);
   }
 }
 @keyframes logo-scale {
@@ -372,10 +363,8 @@ h1, h2, h3, p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  -webkit-animation-name: title-move;
-          animation-name: title-move;
-  -webkit-animation-duration: 2000ms;
-          animation-duration: 2000ms;
+  animation-name: title-move;
+  animation-duration: 2000ms;
 }
 @media screen and (min-width: 480px) {
   .hero__title {
@@ -388,16 +377,6 @@ h1, h2, h3, p {
     line-height: 1.36;
     letter-spacing: 2.64px;
     width: 696px;
-  }
-}
-@-webkit-keyframes title-move {
-  0% {
-    transform: translateX(-1500px) scale(0);
-    color: #000;
-  }
-  100% {
-    transform: translateX(0) scale(1);
-    color: #fff;
   }
 }
 @keyframes title-move {
@@ -422,26 +401,12 @@ h1, h2, h3, p {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  -webkit-animation-name: btn-move;
-          animation-name: btn-move;
-  -webkit-animation-duration: 2000ms;
-          animation-duration: 2000ms;
+  animation-name: btn-move;
+  animation-duration: 2000ms;
 }
 @media screen and (min-width: 1200px) {
   .hero__btn {
     padding: 10px 32px;
-  }
-}
-@-webkit-keyframes btn-move {
-  0% {
-    transform: translateX(1500px) rotate(0) scale(0);
-    color: #000;
-    background-color: red;
-  }
-  100% {
-    transform: translateX(0) rotate(360deg) scale(1);
-    color: #fff;
-    background-color: #2196f3;
   }
 }
 @keyframes btn-move {
@@ -1111,8 +1076,7 @@ h1, h2, h3, p {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 .modal__btn {
   color: #fff;
