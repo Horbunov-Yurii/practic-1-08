@@ -155,19 +155,46 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
-              <img src="./img/comp.jpg" alt="comp" class="work-images" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/comp@2x.webp 2x,
+                    ./img/desktop/comp@1x.webp 1x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/comp.jpg" alt="comp" class="work-images" />
+              </picture>
               <div class="work__wrap">
                 <h3 class="work__deck">Десктопні додатки</h3>
               </div>
             </li>
             <li class="work__item">
-              <img src="./img/tel.jpg" alt="tel" class="work__images" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/mobile@2x.webp 2x,
+                    ./img/desktop/mobile@1x.webp 1x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/tel.jpg" alt="tel" class="work__images" />
+              </picture>
               <div class="work__wrap">
                 <h3 class="work__deck">Мобільні додатки</h3>
               </div>
             </li>
             <li class="work__item">
-              <img src="./img/tablet.jpg" alt="tablet" class="work__images" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/tablet@2x.webp 2x,
+                    ./img/desktop/tablet@1x.webp 1x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/tablet.jpg" alt="tablet" class="work__images" />
+              </picture>
               <div class="work__wrap">
                 <h3 class="work__deck">Дизайнерські рішення</h3>
               </div>
